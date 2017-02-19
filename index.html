@@ -1,180 +1,1590 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<!doctype html>
+
+
+
   
 
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="曾哥哥">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="曾哥哥">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="曾哥哥">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title> 曾哥哥 </title>
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">曾哥哥</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/19/hello-world/" class="article-date">
-  <time datetime="2017-02-19T14:42:50.156Z" itemprop="datePublished">2017-02-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+        <p class="site-subtitle"></p>
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/19/hello-world/" data-id="cizcsjtdv0000kso07ecbtpl0" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
+    </ul>
   
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/02/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/16/php-面试题/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/16/php-面试题/" itemprop="url">
+                  PHP之面试题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-16T08:52:04+08:00">
+                2017-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以下面试题，有部分是自己整理的，有些是在他人blog上转载过来的，感谢作者；<br>转载链接有：</p>
+<ul>
+<li><a href="http://www.cnblogs.com/hanqishihu/p/5560767.html" target="_blank" rel="external">http://www.cnblogs.com/hanqishihu/p/5560767.html</a></li>
+</ul>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="php基础"><a href="#php基础" class="headerlink" title="php基础"></a>php基础</h3><p>1.用PHP打印出前一天的时间格式是2006-5-10 22:21:21<br><code>echo date(&#39;Y-m-d H:i:s&#39;, strtotime(&#39;-1 days&#39;));</code></p>
+<p>2.如何实现字符串翻转?<br><code>echo strrev($a);</code></p>
+<p>3.php中传值与传引用的区别?</p>
+<p>按值传递：函数范围内对值的任何改变在函数外部都会被忽略<br>按引用传递：函数范围内对值的任何改变在函数外部也能反映出这些修改</p>
+<p>4.strlen()与mb_strlen的作用与区别?</p>
+<p>strlen无法正确处理中文字符串,对于GB2312的中文编码，strlen得到的值是汉字个数的2倍，而对于UTF-8编码的中文，就是3倍（在 UTF-8编码下，一个汉字占3个字节）<br>采用mb_strlen函数可以较好地解决这个问题</p>
+<p>5.isset() 、empty()与is_null的区别?</p>
+<p>(1)当变量未定义时，is_null() 和“参数本身”是不允许作为参数判断的，会报Notice警告错误；<br>(2)empty , isset首先都会检查变量是否存在，然后对变量值进行检测。而is_null 和 “参数本身”只是直接检查变量值，是否为null，因此如果变量未定义就会出现错误！<br>(3)isset()：仅当null和未定义，返回false；<br>(4)empty()：””、0、”0”、NULL、FALSE、array(),未定义，均返回true；<br>(5)is_null()：仅判断是否为null，未定义报警告；<br>(6)变量本身作为参数，与empty()一致，但接受未定义变量时，报警告；</p>
+<p>6.表单中 get与post提交方法的区别?</p>
+<p>(1)get主要从服务器上获取数据，post像服务器传送数据;<br>(2)get通过URL传参，在URL可以直接看到，post以请求实体提交，用户不可见<br>(3)get传递的数据量不能超过2KB,post一般不受限制<br>(4)get相对post的安全性低<br>(5)FORM表单提交，不填写method，默认以get方式提交</p>
+<p>7.session与cookie的区别?</p>
+<p>cookie：一种通过服务器设置，将数据保存到浏览器端的技术，<br>当再次访问时又会将保存在浏览器端的cookie数据带回给服务器；</p>
+<ul>
+<li>可以通过header函数来设置协议项（set-cookie:名=值）；</li>
+<li>通过函数setcookie()设置，该函数有多个参数可以设置；<br>①参数1，参数2，是设置cookie的名与值（可以不设）；<br>②参数3，设置cookie的生命周期（默认会话关闭，失效）；<br>③参数4，用户设置cookie的作用范围（默认cookie是只能在同级目录即子目录才可以共享）；<br>④参数5，可以设置cookie实现跨域共享（默认不能实现），前提是保证有相同的一级域名;</li>
+</ul>
+<p>SESSION：一种将数据保存在服务器中，实现跨脚本共享数据的会话技术；</p>
+<ul>
+<li>session有两种方式开启：<br>①：手动开启，每次要使用session必须使用函数session_start激活session机制；<br>②：自动开启（通过设置php.ini文件，默认是关闭），每次使用不用激活；不建议使用（会造成，在不跨脚本都会额外创建文件）</li>
+<li>默认是保存在cookie中；sessin中保存的sessionID保存方式：</li>
+<li>可以修改配置文件保存到URL中（当用户禁用cookie时，可以使用这个方法）</li>
+<li>sessionID的生命周期：默认是会话结束，即使被失效；</li>
+<li>sessionID的作用范围：默认是整站（/）；</li>
+<li>sessionID默认不支持跨域；</li>
+<li>session文件默认的最大生命周期（过期）是24分钟；</li>
+</ul>
+<p>8.Http常见状态码</p>
+<ul>
+<li>2XX 成功<br>200 OK，表示从客户端发来的请求在服务器端被正确处理</li>
+<li>3XX 重定向<br>301 永久性重定向，表示资源已被分配了新的 URL<br>302 临时性重定向，表示资源临时被分配了新的 URL</li>
+<li>4XX 客户端错误<br>400 错误的请求<br>401 表示发送的请求需要有通过 HTTP 认证的认证信息<br>403 表示对请求资源的访问被服务器拒绝<br>404 表示在服务器上没有找到请求的资源</li>
+<li>5XX 服务器错误<br>500 内部服务器错误<br>503 服务器目前无法为请求提供服务，但过一段时间就可以恢复服务</li>
+</ul>
+<p>9.php函数</p>
+<ul>
+<li><p>基本操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">array_values($arr);       //获得数组的值</div><div class="line">array_keys($arr);         //获得数组的键名</div><div class="line">array_flip($arr);         //数组中的值与键名互换（如果有重复前面的会被后面的覆盖）</div><div class="line">array_search(&apos;PHP&apos;,$arr); //检索给定的值，加true则是严格类型检查</div><div class="line">array_reverse($arr);      //将数组中的元素翻转</div><div class="line">in_array(&quot;apple&quot;, $arr);  //在数组中检索apple</div><div class="line">array_key_exists(&quot;apple&quot;, $arr); // 检索给定的键名是否存在数组中</div><div class="line">array_count_values($arr);        // 统计数组中所有值出现的次数</div></pre></td></tr></table></figure>
+</li>
+<li><p>数组的分段和填充</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">array_slice($arr, 0, 3);    //将数组中的一段取出，此函数忽略键名（数组的分段）</div><div class="line">array_splice($arr, 0, 3，array(&quot;black&quot;,&quot;maroon&quot;));将数组中的一段取出，返回的序列从原数组中删除</div><div class="line">array_chunk($arr, 3, TRUE);   //将一个数组分割成多个，TRUE为保留原数组的键名（分割多个数组）</div></pre></td></tr></table></figure>
+</li>
+<li><p>数组与栈，列队</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">array_push($arr, &quot;apple&quot;, &quot;pear&quot;);    //将一个或多个元素压入数组栈的末尾（入栈），返回入栈元素的个数</div><div class="line">array_pop($arr);    // 将数组栈的最后一个元素弹出（出栈）</div><div class="line">array_shift($arr);   //数组中第一个元素移出并返回（长度减1，其他元素向前移动一位，数字键名改为从零计数，文字键名不变）</div><div class="line">array_unshift($arr,&quot;a&quot;,array(1,2));  //在数组的开头插入一个或多个元素</div></pre></td></tr></table></figure>
+</li>
+<li><p>数组的排序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sort($arr);       //由小到大，忽略键名       </div><div class="line">rsort($arr);      //由大到小，忽略键名</div><div class="line">asort($arr);     //由小到大，保留键名       </div><div class="line">arsort($arr);    // 由大到小，保留键名</div><div class="line">ksort($arr);     //按照键名正序排序           </div><div class="line">krsort($arr);   // 按照键名逆序排序</div></pre></td></tr></table></figure>
+</li>
+<li><p>数组的计算</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">array_sum($arr);   //对数组内部的所有元素做求和运算（数组元素的求和）</div><div class="line">array_merge($arr1, $arr2); //合并两个或多个  </div><div class="line">array_diff($arr1, $arr2);  //返回差集结果数组   </div><div class="line">array_diff_assoc($arr1, $arr2, $arr3);  //返回差集结果数组，键名也做比较</div><div class="line">array_intersect($arr1, $arr2);  //返回交集结果数组    </div><div class="line">array_intersect_assoc($arr1, $arr2);   //返回交集结果数组，键名也做比较</div><div class="line">array_unique($arr);   //移除数组中重复的值，新的数组中会保留原始的键名</div><div class="line">shuffle($arr);        // 将数组的顺序打乱</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>10.php常量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">__LINK__    //文件中的当前行号。</div><div class="line">__FILE__    //文件的完整路径和文件名。如果用在被包含文件中，则返回被包含的文件名。</div><div class="line">__DIR__     //文件所在的目录。它等价于 dirname(__FILE__)</div></pre></td></tr></table></figure></p>
+<p>11.写一个函数，可以遍历文件夹下的所有文件和文件夹。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function get_dir_info($path)&#123;</div><div class="line">      $handle = opendir($path);//打开目录返回句柄</div><div class="line">      while(($content = readdir($handle))!== false)&#123;</div><div class="line">            $new_dir = $path . DIRECTORY_SEPARATOR . $content;</div><div class="line">            if($content == &apos;..&apos; || $content == &apos;.&apos;)&#123;</div><div class="line">                  continue;</div><div class="line">            &#125;</div><div class="line">            if(is_dir($new_dir))&#123;</div><div class="line">                  echo &quot;&lt;br&gt;目录：&quot;.$new_dir . &apos;&lt;br&gt;&apos;;</div><div class="line">                 get_dir_info($new_dir);</div><div class="line">            &#125;else&#123;</div><div class="line">                 echo &quot;文件：&quot;.$path.&apos;:&apos;.$content .&apos;&lt;br&gt;&apos;;</div><div class="line">           &#125;</div><div class="line">     &#125;</div><div class="line"> &#125;</div><div class="line"> get_dir_info($dir);</div></pre></td></tr></table></figure></p>
+<p>12.PHP缓存技术有哪些? tp是局部还是完全缓存?</p>
+<p>(1)全页面静态化缓存，也就是将页面全部生成html静态页面，用户访问时直接访问的静态页面，而不会去走php服务器解析的流程<br>(2)页面部分缓存，将一个页面中不经常变的部分进行静态缓存，而经常变化的块不缓存，最后组装在一起显示<br>(3)数据缓存，通过一个id进行请求的数据,将数据缓存到一个php文件中,id和文件是对应的,下次通过这个id进行请求时 直接读php文件<br>(4)查询缓存，和数据缓存差不多,根据查询语句进行缓存;<br>(5)常用的缓存技术有：redis和memcache</p>
+<p>13.session共享问题解决方案?</p>
+<p>(1)使用数据库保存session， 使用数据库来保存session，就算服务器宕机了也没事，session照样在。<br>问题：程序需要定制；每次请求都进行数据库读写开销不小，另外数据库是一个单点，可以做数据库的hash来解 决这个问题。<br>(2)使用 memcached来保存session， 这种方式跟数据库类似，内存存取性能比数据库好很多。<br>问题：程序需要定制，增加了工作量；存入memcached中的数据都需要序列化，效率较低，断电或者重启电脑容易丢失数据；<br>(3)通过加密的cookie，在A服务器上登录，在用户的浏览器上添加加密的cookie，当用户访问B服务器时，检查有无Session，如果没有，就检验Cookie是否有效，Cookie有效的话就在B服务器上重建session。简单，高效， 服务器的压力减小了，因为session数据不存在服务器磁盘上。根本就不会出现session读取不到的问题。<br>问题：网络请求占用很多。每次请求时，客户端都要通过cookie发送session数据给服务器，session中数据不能太多，浏览器对cookie 的大小存在限制。不适合高访问量的情况</p>
+<h3 id="mysql基础"><a href="#mysql基础" class="headerlink" title="mysql基础"></a>mysql基础</h3><p>1.如何创建索引？</p>
+<ul>
+<li>普通索引</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">创建：</div><div class="line">create index index_name on tableName(column);</div><div class="line">alter table tableName add index index_name (column);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">删除：</div><div class="line">drop index index_name on tableName;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>唯一索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">create unique index_name on tableName (cloumn);</div><div class="line">alter table tableName add unique index_name (cloumn);</div></pre></td></tr></table></figure>
+</li>
+<li><p>主键索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alter table tablename add primary key(fieldname);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.数据库中的事务是什么?</p>
+<p>事务（transaction）是作为一个单元的一组有序的数据库操作。就是在一连串的操作当中，要么都成功了，才会成功，其实有一个环节出错，都会将前面做的回滚。</p>
+<h2 id="进阶-（纯粹个人见解，不喜勿喷）"><a href="#进阶-（纯粹个人见解，不喜勿喷）" class="headerlink" title="进阶 （纯粹个人见解，不喜勿喷）"></a>进阶 （纯粹个人见解，不喜勿喷）</h2><p>1.学习一个新框架如何入手?</p>
+<p>个人所见，学习一个框架。首先需要先把框架下载下来吧？？然后大致得浏览一下框架的目录结构，确定一下MVC是放在哪里。接着通过官方手册查看，如何使用route,明白从一个url到controller,到调用model,最后渲染出view是一个怎样的过程，简单的跑一下，先输出一个’hello world’啥的。接着就找一个小项目，看看别人都是怎样做的，自己可以仿照一下（如果在公司，有自己的项目学习，那就最好了，这样边学边做）。同时要记得多查多看手册，慢慢发现框架的其他功能，并自己去实践一下，这样学习一个框架我觉得还是可以的。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 
 
-<script src="/js/script.js"></script>
+    
+      
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/mysql-base/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/mysql-base/" itemprop="url">
+                  Mysql基本命令
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T16:27:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/删库跑路/" itemprop="url" rel="index">
+                    <span itemprop="name">删库跑路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>创建用户:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create user &apos;username&apos;@&apos;host&apos; IDENTIFIED BY &apos;password&apos;;</div></pre></td></tr></table></figure></p>
+<p>设置访问单个数据库权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grant all privileges on database.table to &apos;user&apos;@&apos;host&apos;;</div></pre></td></tr></table></figure></p>
+<p>设置访问全部数据库权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grant all privileges on *.* to &apos;user&apos;@&apos;host&apos;;</div></pre></td></tr></table></figure></p>
+<p>设置指定用户名访问权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grant all privileges on *.* to &apos;user&apos;@&apos;%&apos;</div></pre></td></tr></table></figure></p>
+<p>设置密码访问权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grant all privileges on *.* to &apos;user&apos;@&apos;%&apos; IDENTIFIED BY &apos;liuhui&apos;;</div></pre></td></tr></table></figure></p>
+<p>设置指定可访问主机权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grant all privileges on *.* to &apos;liuhui&apos;@&apos;10.2.1.11&apos;;</div></pre></td></tr></table></figure></p>
+<p>撤销用户权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">REVOKE privilege ON databasename.tablename FROM &apos;username&apos;@&apos;host&apos;;</div></pre></td></tr></table></figure></p>
+<p>删除用户<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">DROP USER &apos;username&apos;@&apos;host&apos;;</div></pre></td></tr></table></figure></p>
+<p>设置与更改用户密码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SET PASSWORD FOR &apos;username&apos;@&apos;host&apos; = PASSWORD(&apos;newpassword&apos;);</div></pre></td></tr></table></figure></p>
+<p>如果是当前登陆用户用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SET PASSWORD = PASSWORD(&quot;newpassword&quot;);</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/nginx-vhost/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/nginx-vhost/" itemprop="url">
+                  Nginx虚拟机设置
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T16:27:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/跌宕服务/" itemprop="url" rel="index">
+                    <span itemprop="name">跌宕服务</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>配置nginx虚拟机，在vhosts.conf中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen       80;</div><div class="line">        server_name  local.blog.com;</div><div class="line">        root   &quot;E:/server/www/blog/public/&quot;;</div><div class="line">        location / &#123;</div><div class="line">            index  index.html index.htm index.php;</div><div class="line">            try_files $uri $uri/ /index.php?$query_string;</div><div class="line">        &#125;</div><div class="line">        location ~ \.php(.*)$ &#123;</div><div class="line">            fastcgi_pass   127.0.0.1:9000;</div><div class="line">            fastcgi_index  index.php;</div><div class="line">            fastcgi_split_path_info  ^((?U).+\.php)(/?.+)$;</div><div class="line">            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;</div><div class="line">            fastcgi_param  PATH_INFO  $fastcgi_path_info;</div><div class="line">            fastcgi_param  PATH_TRANSLATED  $document_root$fastcgi_path_info;</div><div class="line">            include        fastcgi_params;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/linux-phpize/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/linux-phpize/" itemprop="url">
+                  phpize扩展安装
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T16:00:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>介绍：linux系统中，php安装成功后，在bin目录下会生成一个名叫phpize的可执行脚本，这个脚本的用途是动态安装php扩展模块。<br>使用phpize脚本安装php扩展模块的好处：在安装php时没有安装的扩展，可以在以后随时安装上，且不需要重新安装PHP。</p>
+<p>安装步骤：</p>
+<h2 id="切换到扩展模块目录"><a href="#切换到扩展模块目录" class="headerlink" title="切换到扩展模块目录"></a>切换到扩展模块目录</h2><p>在php源码包被解压后的目录中有个ext子目录，这里有近70多个主流的php扩展模块安装包。<br>如现在要安装memcache扩展，则切换到memcache目录：<br><code>cd /software/php-5.2.14/ext/memcache</code></p>
+<h2 id="在memcache目录中执行phpize脚本"><a href="#在memcache目录中执行phpize脚本" class="headerlink" title="在memcache目录中执行phpize脚本"></a>在memcache目录中执行phpize脚本</h2><p><code>/usr/local/php/bin/phpize</code></p>
+<p>执行成功会返回几行数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Configuring for:</div><div class="line">PHP Api Version:         20041225</div><div class="line">Zend Module Api No:      20060613</div><div class="line">Zend Extension Api No:   220060519</div></pre></td></tr></table></figure>
+<h2 id="开始编译-注意–with-php-config参数"><a href="#开始编译-注意–with-php-config参数" class="headerlink" title="开始编译(注意–with-php-config参数)"></a>开始编译(注意–with-php-config参数)</h2><p><code>./configure --with-php-config=/usr/local/php/bin/php-config</code></p>
+<h2 id="make-amp-make-install"><a href="#make-amp-make-install" class="headerlink" title="make &amp; make install"></a>make &amp; make install</h2><p>这时在<br><code>/usr/local/php/lib/php/extensions/no-debug-non-zts-20060613/</code></p>
+<p>目录会生成memcache.so文件</p>
+<h2 id="在php-ini中找到extension-dir字段，把值修改成："><a href="#在php-ini中找到extension-dir字段，把值修改成：" class="headerlink" title="在php.ini中找到extension_dir字段，把值修改成："></a>在php.ini中找到extension_dir字段，把值修改成：</h2><p><code>/usr/local/php/lib/php/extensions/no-debug-non-zts-20060613/</code></p>
+<p>7、再在php.ini的Dynamic Extensions节位置下添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">extension = &quot;memcache.so&quot;</div></pre></td></tr></table></figure></p>
+<p>8、重启 PHP 、NGINX 、APACHE，完成。</p>
+<p>转载处 <a href="https://www.douban.com/note/312221012/" target="_blank" rel="external">https://www.douban.com/note/312221012/</a><br>感谢作者</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/samba-server/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/samba-server/" itemprop="url">
+                  Samba服务搭建
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T15:52:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="检查是否安装samba"><a href="#检查是否安装samba" class="headerlink" title="检查是否安装samba"></a>检查是否安装samba</h2><p><code>[root@localhost ~]# rpm -qa|grep samba</code><br>否则，使用<br><code># yum install smaba</code></p>
+<h2 id="配置samba"><a href="#配置samba" class="headerlink" title="配置samba"></a>配置samba</h2><p>设置开机启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># chkconfig smb on</div><div class="line"># chkconfig nmb on</div></pre></td></tr></table></figure></p>
+<h2 id="新建smb用户用于访问Linux共享文件"><a href="#新建smb用户用于访问Linux共享文件" class="headerlink" title="新建smb用户用于访问Linux共享文件"></a>新建smb用户用于访问Linux共享文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># useradd smb       # 新建用户</div><div class="line"># smbpasswd -a smb  # 修改密码</div></pre></td></tr></table></figure>
+<h2 id="samba配置文件【-etc-samba-smb-conf】。"><a href="#samba配置文件【-etc-samba-smb-conf】。" class="headerlink" title="samba配置文件【/etc/samba/smb.conf】。"></a>samba配置文件【/etc/samba/smb.conf】。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[smb]</div><div class="line">comment = Tmp Directories</div><div class="line">path = /tmp                         # 共享的Linux目录</div><div class="line">public = no                         # 目录不公开</div><div class="line">writeable = yes                     # 可写</div><div class="line">browseable = yes                    # 可读</div><div class="line">valid users = smb                   # 访问用户，上面新建的，也可以使用原来已有的</div></pre></td></tr></table></figure>
+<h2 id="把防火墙关了，"><a href="#把防火墙关了，" class="headerlink" title="把防火墙关了，"></a>把防火墙关了，</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># service iptables stop    # 暂时关闭</div><div class="line"># chkconfig iptables off  # 永久关闭</div></pre></td></tr></table></figure>
+<h2 id="启动samba"><a href="#启动samba" class="headerlink" title="启动samba"></a>启动samba</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># service samba start   # 启动</div><div class="line"># service samba restart # 重启</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/git-server/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/git-server/" itemprop="url">
+                  搭建Git服务器
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T13:52:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="先安装git"><a href="#先安装git" class="headerlink" title="先安装git"></a>先安装git</h2><p><code>[root@localhost ~]# yum install -y git</code></p>
+<h2 id="创建一个git用户，用来运行git服务"><a href="#创建一个git用户，用来运行git服务" class="headerlink" title="创建一个git用户，用来运行git服务"></a>创建一个git用户，用来运行git服务</h2><p><code>[root@localhost ~]# adduser git</code> </p>
+<h2 id="选定一个目录作为Git仓库"><a href="#选定一个目录作为Git仓库" class="headerlink" title="选定一个目录作为Git仓库"></a>选定一个目录作为Git仓库</h2><p>这里是/data/git/project.git。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# cd /data/git/</div><div class="line">[root@localhost git]# git init --bare project.git</div></pre></td></tr></table></figure></p>
+<p>执行以上命令Git命令，会创建一个裸仓库，裸仓库没有工作区，因为服务器上的Git仓库纯粹是为了共享所以不让用户直接登录到服务器上去改工作区，并且服务器上的Git仓库通常都以.git结尾。然后，把owner改为git</p>
+<p><code>[root@localhost git]# chown -R git.git project.git</code></p>
+<p>在/home/git/.ssh家目录中生成一个.ssh的文件，然后创建authorized_keys用来保存客服端的公钥，这样客服端登录就不用密码登录了；<br><code>[root@localhost git] touch authorized_keys</code></p>
+<p>这样git服务器就搭建完成了，就可以通过</p>
+<p><code>$ git clone git@serverIp:/data/git/project.git</code></p>
+<p>这里就不说客户端的创建了，比较简单，当客户端安装后，将生成的公钥放到/home/git/.ssh/authorized_keys中就可以了</p>
+<p>这里有个问题，git服务器安装后，客户端公钥也上传了，但每个git的时候都还需要输入密码，这时还需要更改/home/git/.ssh/authorized_keys的权限</p>
+<p><code>[root@localhost git] chmod 644 /home/git/.ssh/authorized_keys</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/如何加快composer/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="gzeng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="曾哥哥">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="曾哥哥" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/15/如何加快composer/" itemprop="url">
+                  如何加快composer
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T13:21:04+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/框架之路/" itemprop="url" rel="index">
+                    <span itemprop="name">框架之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在学习laravel的时候，用到composer。但是经常速度很慢，让人发指呀！！！<br>这时可以在composer.json文件中加入国内镜像路径，也许就会快很多了。<br>不过这也还是要取决你的当前网络<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&quot;repositories&quot;: &#123;</div><div class="line">        &quot;packagist&quot;: &#123;</div><div class="line">            &quot;type&quot;: &quot;composer&quot;,</div><div class="line">            &quot;url&quot;: &quot;https://packagist.phpcomposer.com&quot;</div><div class="line">        &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+          
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="gzeng" />
+          <p class="site-author-name" itemprop="name">gzeng</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">gzeng</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
 </body>
 </html>
