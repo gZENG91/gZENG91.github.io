@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/23/本地项目访问linux中mysql/index.html">
 <meta property="og:site_name" content="曾哥哥">
 <meta property="og:description" content="今天在工作的时候，想要把本地项目的数据库mysql迁移到linux下，然后本地项目连接linux数据库。步骤如下：1.先到linu中的mysql添加用户并且授权：12create user &amp;apos;username&amp;apos;@&amp;apos;host&amp;apos; IDENTIFIED BY &amp;apos;password&amp;apos;; grant all privileges on *.* to">
-<meta property="og:updated_time" content="2017-03-23T15:55:54.617Z">
+<meta property="og:updated_time" content="2017-03-23T16:09:05.761Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="本地项目访问linux中的mysql">
 <meta name="twitter:description" content="今天在工作的时候，想要把本地项目的数据库mysql迁移到linux下，然后本地项目连接linux数据库。步骤如下：1.先到linu中的mysql添加用户并且授权：12create user &amp;apos;username&amp;apos;@&amp;apos;host&amp;apos; IDENTIFIED BY &amp;apos;password&amp;apos;; grant all privileges on *.* to">
@@ -378,8 +378,9 @@
 
       
         <p>今天在工作的时候，想要把本地项目的数据库mysql迁移到linux下，然后本地项目连接linux数据库。<br>步骤如下：<br>1.先到linu中的mysql添加用户并且授权：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">create user &apos;username&apos;@&apos;host&apos; IDENTIFIED BY &apos;password&apos;; </div><div class="line">grant all privileges on *.* to &apos;user&apos;@&apos;host&apos;;</div></pre></td></tr></table></figure></p>
-<p>在设置了这两步之后，以后就可以从本地去访问mysql了，结果大失所望啊，竟然不给我访问！！！<br>用mysql客户端navicat都能访问，就是项目中不能连接。<br>开始的时候以为要关闭防火墙，结果不行。<br>最后通过google找了答案，应该在防火墙中设置打开3306端口<br>2.将3306端口添加到iptables中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">vi /etc/sysconfig/iptables</div><div class="line">A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT</div><div class="line"></div><div class="line">3.重启防火墙</div></pre></td></tr></table></figure></p>
-<p>service iptables restart<br>```</p>
+<p>在设置了这两步之后，以后就可以从本地去访问mysql了，结果大失所望啊，竟然不给我访问！！！<br>用mysql客户端navicat都能访问，就是项目中不能连接。<br>开始的时候以为要关闭防火墙，结果不行。<br>最后通过google找了答案，应该在防火墙中设置打开3306端口<br>2.将3306端口添加到iptables中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">vi /etc/sysconfig/iptables</div><div class="line">A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT</div></pre></td></tr></table></figure></p>
+<p>3.重启防火墙</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">service iptables restart</div></pre></td></tr></table></figure>
 
       
     </div>
